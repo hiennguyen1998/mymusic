@@ -1,0 +1,32 @@
+<html>
+
+<head></head>
+
+<body>
+    <audio src="../audio/HayTraoChoAnh-SonTungMTPSnoopDogg-6010660 (1).mp3" controls type="audio/ogg"
+        id="audio_element_id"></audio>
+   <canvas id="output" height="500" width="500"></canvas>
+
+   <script src="https://cdn.jsdelivr.net/gh/foobar404/wave.js/dist/bundle.iife.js"></script>
+   <script>
+      let wave = new Wave();
+      options = {type:"flower"};
+      wave.fromElement("audio_element_id","output", options);
+      
+
+    //   navigator.mediaDevices.getUserMedia({
+    //         audio: true
+    //      })
+    //      .then(function (stream) {
+    //         wave.fromStream(stream, "output", {
+    //            type: "shine",
+    //            colors: ["red", "white", "blue"]
+    //         });
+    //      })
+    //      .catch(function (err) {
+    //         console.log(err.message)
+    //      });
+   </script>
+</body>
+
+</html>

@@ -1,0 +1,476 @@
+<html lang="vi">
+
+<head>
+
+    <title>Zing MP3 VIP - Trải nghiệm không gian âm nhạc đẳng cấp của Zing Mp3</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="icon" type="image/png" href="//static-zmp3.zadn.vn/skins/zmp3-v5.1/images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+        content="Zing MP3 VIP là dịch vụ nghe nhạc online chất lượng cao dành riêng cho thành viên sở hữu tài khoản VIP. Dịch vụ mạng đến các trải nghiệm mới mẻ trong khi thưởng thức âm nhạc kèm các tiện ích tuyệt vời.">
+    <meta property="og:url" content="http://mp3.zing.vn/vip">
+    <meta name="format-detection" content="telephone=no">
+    <meta property="og:site_name" content="Mp3 Vip">
+    <meta property="og:image" content="//static-zmp3.zadn.vn/skins/zmp3-v5.1/vip/images/vip_cover_20180920.jpg">
+    <link href="//static-zmp3.zadn.vn/skins/zmp3-v5.1/family-vip/css/main.0.0.14.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//static-zmp3.zadn.vn/skins/zmp3-v5.1/family-vip/plugins/slick.css" type="text/css">
+    <link rel="stylesheet" href="//static-zmp3.zadn.vn/skins/zmp3-v5.1/family-vip/plugins/slick-theme.css"
+        type="text/css">
+    <style>
+        @media only screen and (max-width: 840px) {
+            .logo-container {
+                left: 20px;
+            }
+
+            .menu-container {
+                padding-left: 120px !important;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            body {
+                overflow: auto !important;
+            }
+        }
+    </style>
+    <script async="" src="//www.google-analytics.com/analytics.js"></script>
+    <script id="gplatform" async="" defer="" src="https://apis.google.com/js/platform.js"
+        gapi_processed="true"></script>
+    <script src="https://stc-sp.zadn.vn/session-sdk/session-sdk.min.js"></script>
+    <style type="text/css">
+        .zl-login {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .zl-login .zl-login-avatar {
+            display: block;
+            -ms-flex-negative: 0;
+            flex-shrink: 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            width: 32px;
+            height: 32px;
+            margin-right: 5px;
+            border-radius: 100%;
+        }
+
+        .zl-login .zl-login-info {
+            -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+            min-width: 0;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            max-width: 120px;
+        }
+
+        .zl-login .zl-login-info.zl-is-dropdown {
+            position: relative;
+            min-height: 32px;
+        }
+
+        .zl-login .zl-login-info.zl-is-dropdown.zl-is-open .zl-login-dropdown-content {
+            display: block;
+        }
+
+        .zl-login .zl-login-info.zl-is-dropdown {
+            position: relative;
+            min-height: 32px;
+        }
+
+        .zl-login .zl-login-info.zl-is-dropdown.zl-is-open .zl-login-dropdown-content {
+            display: block;
+        }
+
+        .zl-login .zl-login-info.zl-is-dropdown .zl-login-dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            min-width: 160px;
+            padding-top: 5px;
+        }
+
+        .zl-login .zl-login-info.zl-is-dropdown .zl-login-dropdown-content ul {
+            background-color: #fff;
+            padding: 0;
+            -webkit-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+            list-style: none;
+        }
+
+        .zl-login .zl-login-info.zl-is-dropdown .zl-login-dropdown-content ul li {
+            text-align: left;
+        }
+
+        .zl-login .zl-login-info.zl-is-dropdown .zl-login-dropdown-content ul li a {
+            display: block;
+            padding: 10px 20px;
+            color: #111;
+            border-bottom: 1px solid #f1f1f1;
+        }
+
+        .zl-login .zl-login-info.zl-is-dropdown .zl-login-dropdown-content ul li a:hover {
+            background-color: #fafafa;
+            opacity: 0.85;
+        }
+
+        .zl-login .zl-login-info.zl-is-dropdown .zl-login-dropdown-content ul li:last-child a {
+            border-bottom: 0;
+        }
+
+        .zl-login .zl-login-info .zl-login-username {
+            position: relative;
+            padding-right: 15px;
+        }
+
+        .zl-login .zl-login-info .zl-login-username span {
+            display: block;
+            max-width: 100px;
+            color: #111;
+            font-weight: 500;
+            overflow: hidden;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .zl-login .zl-login-info .zl-login-username:before {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            content: "";
+            height: 0;
+            width: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid gray;
+            margin-top: -3px;
+        }
+
+        .zalo-login-button {
+            color: #008fec;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .zalo-login-widget {
+            margin-left: 10px;
+        }
+    </style>
+    <script>
+        ZaloLoginWidget.init({
+            sessionName: 'zmp3_sid'
+        });
+    </script>
+    <script type="text/javascript">
+        //redirect to zingmp3.vn/vip-gia-dinh
+        if (location.host.indexOf('m.zingmp3.vn') > -1) {
+            var newdomain = location.href.replace('m.zingmp3.vn', 'zingmp3.vn')
+            location.href = newdomain;
+        }
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id))
+                return;
+            js = d.createElement(s);
+            js.id = id;
+            js.async = 1;
+            js.defer = 1;
+            js.src = "https://apis.google.com/js/platform.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'gplatform'));
+
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments);
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m);
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-1571128-44', 'auto');
+        ga('send', 'pageview');
+        ga('create', 'UA-1571128-44', 'auto', { 'name': 'mp3' });
+    </script>
+    <!-- Include Plugin-->
+    <script src="//static-zmp3.zadn.vn/skins/zmp3-v5.1/vip/js/jquery.min.js"></script>
+</head>
+
+<body style="">
+
+    <main class="w-zingmp3">
+        <div canvas="container">
+            <div id="wrapper">
+                <div class="wrapper-page">
+                    <div class="zimgmp3Vip-layout">
+                        <section class="header">
+                            <div class="header-container">
+
+                                <div class="js-toggle-left-slidebar js-menu-mobile">
+                                    <div class="trigger-menu"><span class="three-bars-icon"></span></div>
+                                </div>
+                                <div class="logo-container">
+                                    <a href="https://zingmp3.vn" title="Zing Mp3">Zing Mp3 - VIP</a>
+                                </div>
+
+                                <a class="fn-login link-login show-on-small"
+                                    href="https://id.zalo.me/account?continue=https://zingmp3.vn/vip-gia-dinh">Đăng
+                                    nhập</a>
+
+                                <div class="user-profile user-mb show-on-small hidden">
+
+                                </div>
+                                <div class="menu-container">
+                                    <ul>
+                                        <li><a class="" title="VIP" href="/vip">VIP</a></li>
+                                        <li><a title="Gói cước data"
+                                                href="//zaloplus.vn/?utm_source=vip_zlp_mp3&amp;utm_medium=menu&amp;utm_campaign=wap_menu&amp;app=mp3">Gói
+                                                cước data</a></li>
+                                        <li><a class="active" title="VIP Family" href="#">VIP Family</a></li>
+                                    </ul>
+                                </div>
+                                <div class="menu-user">
+                                    <ul>
+
+                                        <li><a class="fn-login" title="Đăng Nhập"
+                                                href="https://id.zalo.me/account?continue=https://zingmp3.vn/vip-gia-dinh">Đăng
+                                                Nhập</a></li>
+
+
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                        </section>
+                        <section class="body">
+                            <div class="body-container">
+                                <div class="cover-container"
+                                    style="background-image: url(//static-zmp3.zadn.vn/skins/zmp3-v5.1/family-vip/images/family-vip.jpg)">
+                                    <div class="inside"><span class="logo-mp3"></span>
+                                        <h2>VIP Family</h2>
+                                        <h3 class="content">
+                                            Âm nhạc không giới hạn cho nhiều tài khoản
+                                            <br> chỉ với 89.000 VNĐ
+                                        </h3>
+                                        <p>
+                                            <a class="btn btn-primary btn--l buy-vip" href="#guideBuyVip">Hướng dẫn
+                                                mua</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="module-about">
+                                    <h2>Tại sao nên nâng cấp lên VIP Family?</h2>
+                                    <ul>
+                                        <li>
+                                            <img src="//static-zmp3.zadn.vn/skins/zmp3-v5.1/family-vip/images/save.svg"
+                                                alt="Zing Mp3 - VIP">
+                                            <span>Tiết kiệm vô địch</span>
+                                            <span class="content">
+                                                Chỉ 89.000 VNĐ cho tối đa 6 tài khoản. Chia sẻ càng nhiều chi tiêu càng
+                                                ít
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <img src="//static-zmp3.zadn.vn/skins/zmp3-v5.1/family-vip/images/personal.svg"
+                                                alt="Zing Mp3 - VIP">
+                                            <span>Tài khoản cá nhân</span>
+                                            <span class="content">
+                                                Gu âm nhạc của mỗi thành viên được quản lý riêng biệt và cá nhân hóa
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <img src="//static-zmp3.zadn.vn/skins/zmp3-v5.1/family-vip/images/vip.svg"
+                                                alt="Zing Mp3 - VIP">
+                                            <span>Đủ tính năng VIP</span>
+                                            <span class="content">
+                                                Tất cả thành viên có đầy đủ tính năng và trải nghiệm VIP trên Zing MP3
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <img src="//static-zmp3.zadn.vn/skins/zmp3-v5.1/family-vip/images/share-zalo.svg"
+                                                alt="Zing Mp3 - VIP">
+                                            <span>Dễ dàng chia sẻ</span>
+                                            <span class="content">
+                                                Cực kỳ đơn giản. Thêm thành viên vào gói thông qua danh bạ Zalo
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="module-buy-vip" id="guideBuyVip">
+                                    <h2>Hướng dẫn mua VIP</h2>
+                                    <ul class="guide-container">
+
+
+
+                                        <li class="" style="" aria-hidden="true" tabindex="0" role="tabpanel"
+                                            id="slick-slide00" aria-describedby="slick-slide-control00">
+                                            <div class="guide-content">
+                                                <img src="//static-zmp3.zadn.vn/skins/zmp3-v5.1/family-vip/images/190423_step_1.png"
+                                                    alt="">
+                                                <div class="number">
+                                                    <span>1</span>
+                                                </div>
+                                            </div>
+                                            <div class="guide-text">
+                                                Bấm vào nút “Mua VIP” ở phần tài khoản cá nhân
+                                            </div>
+
+                                        </li>
+                                        <li class="" style="" aria-hidden="true" tabindex="-1" role="tabpanel"
+                                            id="slick-slide01" aria-describedby="slick-slide-control01">
+                                            <div class="guide-content">
+                                                <img src="//static-zmp3.zadn.vn/skins/zmp3-v5.1/family-vip/images/190423_step_2.png"
+                                                    alt="">
+                                                <div class="number">
+                                                    <span>2</span>
+                                                </div>
+                                            </div>
+                                            <div class="guide-text">
+                                                Chọn gói VIP Family bấm vào nút “89.000đ” để thanh toán nhanh.
+                                            </div>
+                                        </li>
+                                        <li class="" style="" aria-hidden="true" tabindex="-1" role="tabpanel"
+                                            id="slick-slide02" aria-describedby="slick-slide-control02">
+                                            <div class="guide-content">
+                                                <img src="//static-zmp3.zadn.vn/skins/zmp3-v5.1/family-vip/images/190424_step_3.png"
+                                                    alt="">
+                                                <div class="number">
+                                                    <span>3</span>
+                                                </div>
+                                            </div>
+                                            <div class="guide-text">
+                                                Xác nhận thanh toán
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+
+                        <footer id="footer" class="bg-footer">
+                            <div class="container">
+                                <div class="sub-container">
+                                    <div class="row">
+                                        <div class="z-license-logo clearfix">
+                                            <span class="z-logo"></span>
+                                            <div class="z-license-info">
+                                                <div class="z-copyright">
+                                                    Một sản phẩm của Zalo
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="z-nav-footer">
+                                            <li>
+                                                <a class="z-link z-copyright-intro" title="Giới thiệu">Giới thiệu</a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="z-link z-link-special" target="_blank">•</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://mp3.zing.vn/huong-dan/contact" class="z-link "
+                                                    title="Liên hệ" target="_blank">Liên hệ</a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="z-link z-link-special" target="_blank">•</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://adtima.vn/lien-he?utm_source=zingmp3&amp;utm_medium=footer"
+                                                    class="z-link " title="Quảng cáo" target="_blank">Quảng cáo</a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="z-link z-link-special" target="_blank">•</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://docs.google.com/forms/d/1MBR_N1S1vB7LKbSbY0C-03kjDyM-Lp6fGLoyoebJTq0/viewform?edit_requested=true"
+                                                    class="z-link " title="Góp ý" target="_blank">Góp ý</a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="z-link z-link-special" target="_blank">•</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://mp3.zing.vn/tnc" class="z-link"
+                                                    title="Thỏa thuận sử dụng" target="_blank">Thỏa thuận sử dụng</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </footer>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="z-modal --z--rule-modal z-show" tabindex="-1" role="dialog" aria-labelledby="modal-label"
+            aria-hidden="true" id="rule-footer" style="overflow: hidden">
+            <div class="z-modal-inner z-no-pad">
+                <div class="z-modal-content">
+                    <div class="z-buy-download-zone" style="padding: 30px 35px;">
+                        <div class="--z--zingmp3-logo"></div>
+                        <div class="z-copyright-content">
+                            Giấy phép mạng xã hội: 314/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 17/7/2015
+                            <br>
+                            <br>
+                            Chủ quản: Công Ty Cổ Phần VNG
+                            <br>
+                            52 Nguyễn Ngọc Lộc, Phường 14, Quận 10, TP. Hồ Chí Minh
+                        </div>
+                        <a class="z-login-btn close-modal">Đóng</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            $(document).ready(function () {
+                $('.z-copyright-intro').click(function () {
+                    $('.--z--rule-modal').show();
+                })
+                $('.close-modal').click(function () {
+                    $('.--z--rule-modal').hide();
+                })
+            });
+        </script>
+    </main>
+    <script type="text/javascript" src="//static-zmp3.zadn.vn/skins/zmp3-v5.1/family-vip/plugins/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $('.guide-container').slick({
+            dots: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 1,
+            mobileFirst: true,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: "unslick"
+                }
+            ]
+        });
+    </script>
+
+    <script async="" src="https://stc.za.zaloapp.com/v3/za.js"></script>
+</body>
+
+</html>
